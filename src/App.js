@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import { CardList } from './components/card-list/card-list.component'
 
 class App extends Component {
 
@@ -18,8 +19,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        
+      <div className="text-center wrapper">
+        <div className="mb-30">
+            <h1>Monster Friends</h1>
+          </div>
+        <CardList monsters={this.state.monsters} />
       </div>
     )
   }
